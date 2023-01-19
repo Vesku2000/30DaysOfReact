@@ -110,15 +110,45 @@ console.log(itCompanies); //
 
 //2.First remove all the punctuations and change the string 
 //to array and count the number of words in the array
+let text = 'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.';
+let words = text.replace(/[^\w\s]/gi, '').split(' ');
+console.log(words);
+console.log(words.length); 
+
 
 //3.In the following shopping cart add, remove, edit items
+const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey']
 //add 'Meat' in the beginning of your shopping cart if it has not been already added
+if (!shoppingCart.includes('Meat')) { // check if 'Meat' is not already in the array
+    shoppingCart.unshift('Meat'); // add 'Meat' to the beginning of the array
+  }
+  console.log(shoppingCart); // ["Meat", "Bread", "Eggs", "Milk", "Cheese"]
 //add Sugar at the end of you shopping cart if it has not been already added
-//remove 'Honey' if you are allergic to honey
-//modify Tea to 'Green Tea'
 
-//4.In countries array check if 'Ethiopia' exists in the array if it exists print 'ETHIOPIA'. If it does not exist add to the countries list.
-//
-//5.In the webTechs array check if Sass exists in the array and if it exists print 'Sass is a CSS preprocess'. If it does not exist add Sass to the array and print the array.
+if (!shoppingCart.includes('Sugar')) { // check if 'Sugar' is not already in the array
+    shoppingCart.push('Sugar'); // add 'Sugar' to the end of the array
+  }
+  console.log(shoppingCart); // ["Bread", "Eggs", "Milk", "Cheese", "Sugar"]
+//remove 'Honey' if you are allergic to honey
+const allergicToHoney = true;
+if (allergicToHoney) { // check if you are allergic to honey
+    let index = shoppingCart.indexOf('Honey'); // find the index of 'Honey'
+    if (index > -1) {
+      shoppingCart.splice(index, 1); // remove 'Honey' from the array
+    }
+  }
+  console.log(shoppingCart); // ["Bread", "Eggs", "Milk", "Cheese"]
+//modify Tea to 'Green Tea'
+let indexTea = shoppingCart.indexOf('Tea'); // find the index of 'Tea'
+if (indexTea > -1) {
+  shoppingCart[indexTea] = 'Green Tea'; // modify 'Tea' to 'Green Tea'
+}
+console.log(shoppingCart); 
+
+//4.In countries array check if 'Ethiopia' exists in the array 
+//if it exists print 'ETHIOPIA'. If it does not exist add to the countries list.
+
+//5.In the webTechs array check if Sass exists in the array and 
+//if it exists print 'Sass is a CSS preprocess'. If it does not exist add Sass to the array and print the array.
 //
 //6.Concatenate the following two variables and store it in a fullStack variable.
