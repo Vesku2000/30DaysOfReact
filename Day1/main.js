@@ -149,9 +149,9 @@ console.log(shoppingCart);
 //if it exists print 'ETHIOPIA'. If it does not exist add to the countries list.
 let countries = ["India", "China", "USA", "Russia", "Brazil"];
 if(countries.indexOf("Ethiopia") !== -1) {
-    console.log("ETHIOPIA");
+    console.log("ETHIOPIA is here already");
 } else {
-    countries.push("Ethiopia");
+    countries.push("Ethiopia added");
 }
 
 console.log(countries);
