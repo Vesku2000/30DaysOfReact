@@ -147,12 +147,14 @@ console.log(shoppingCart);
 
 //4.In countries array check if 'Ethiopia' exists in the array 
 //if it exists print 'ETHIOPIA'. If it does not exist add to the countries list.
-
+let countries = ["India", "China", "USA", "Russia", "Brazil"];
 if(countries.indexOf("Ethiopia") !== -1) {
     console.log("ETHIOPIA");
 } else {
     countries.push("Ethiopia");
 }
+
+console.log(countries);
 //5.In the webTechs array check if Sass exists in the array and 
 //if it exists print 'Sass is a CSS preprocess'. If it does not exist add Sass to the array and print the array.
 //
