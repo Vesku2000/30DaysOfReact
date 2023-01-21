@@ -211,7 +211,9 @@ const maxAverageDiff = Math.abs(maxAge - averageAge);
 console.log(`min-average difference: ${minAverageDiff}, max-average difference: ${maxAverageDiff}`);
 
 //1.Slice the first ten countries from the countries array
-//
+countries2 = ["United States", "China", "India", "Russia", "Brazil", "Indonesia", "Pakistan", "Nigeria", "Bangladesh", "Mexico"];
+let firstTenCountries = countries2.slice(0, 10);
+
 //Find the middle country(ies) in the countries array
 //
 //Divide the countries array into two equal arrays if it is even.
