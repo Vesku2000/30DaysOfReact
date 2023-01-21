@@ -169,3 +169,50 @@ const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
 const backEnd = ['Node', 'Express', 'MongoDB']
 const fullStack = [...frontEnd, ...backEnd];
 console.log(fullStack)
+
+//Level 3 ---------------------------------------------------------------------------------------------------------------------------------
+//The following is an array of 10 students ages: js 
+//const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]  -
+// Sort the array and find the min and max age - 
+//Find the median age(one middle item or two middle items divided by two) - 
+//Find the average age(all items divided by number of items) - 
+//Find the range of the ages(max minus min) - 
+//Compare the value of (min - average) and (max - average), use abs() method
+const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24];
+
+// Sort the array
+ages.sort((a, b) => a - b);
+console.log(ages); // [19, 19, 20, 22, 24, 24, 24, 25, 25, 26]
+
+// Find the min and max age
+const minAge = Math.min(...ages);
+const maxAge = Math.max(...ages);
+console.log(`Min age: ${minAge}, Max age: ${maxAge}`); // Min age: 19, Max age: 26
+
+// Find the median age
+const middleIndex2 = Math.floor(ages.length / 2);
+const medianAge = ages.length % 2 === 0 
+  ? (ages[middleIndex2 - 1] + ages[middleIndex2]) / 2 
+  : ages[middleIndex2];
+console.log(`Median age: ${medianAge}`);  // Median age: 24
+
+// Find the average age
+const totalAge = ages.reduce((acc, age) => acc + age, 0);
+const averageAge = totalAge / ages.length;
+console.log(`Average age: ${averageAge}`); // Average age: 22.8
+
+// Find the range of the ages
+const range = maxAge - minAge;
+console.log(`Range: ${range}`); // Range: 7
+
+// Compare the value of (min - average) and (max - average), use abs() method
+const minAverageDiff = Math.abs(minAge - averageAge);
+const maxAverageDiff = Math.abs(maxAge - averageAge);
+console.log(`min-average difference: ${minAverageDiff}, max-average difference: ${maxAverageDiff}`);
+
+//1.Slice the first ten countries from the countries array
+//
+//Find the middle country(ies) in the countries array
+//
+//Divide the countries array into two equal arrays if it is even.
+// If countries array is not even , one more country for the first half.
