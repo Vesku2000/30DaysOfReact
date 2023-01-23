@@ -3,6 +3,8 @@
 //How to write a self closing HTML element?
 //<div />
 //What is an HTML attribute? Write some of them
+// href="https://www.w3schools.com
+// src="img_girl.jpg
 //What is JSX?
 //What is babel?
 //What is a transpiler?
