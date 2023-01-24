@@ -3,6 +3,8 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 // To get the root element from the HTML document
 import ferrariImg from './images/ferrari.png';
+import frontendImg from './images/frontend.png';
+import './index.css';
 // JSX element, header
 const welcome = 'Welcome to 30 Days Of React'
 const title = 'Getting Started React'
@@ -53,8 +55,13 @@ const techsFormatted = techs.map((tech) => <li>{tech}</li>)
 
 const user = (
   <div>
+  <div>
     <img src={ferrariImg} alt='ferrari image' />
   </div>
+  <div>
+  <img src={frontendImg} alt='front image' />
+</div>
+</div>
 )
 
 // JSX element, main
