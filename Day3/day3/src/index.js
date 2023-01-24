@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom'
 // To get the root element from the HTML document
 import ferrariImg from './images/ferrari.png';
 import frontendImg from './images/frontend.png';
+import dogImg from './images/dog.png';
 import './index.css';
 // JSX element, header
 const welcome = 'Welcome to 30 Days Of React'
@@ -109,13 +110,51 @@ const sub = (
   </div>
 )
 
+// JSX element, header
+const name = 'Osku koira'
+const titteli = 'Huumekoira'
+const skills = [
+  { id: 1, name: 'JavaScript' },
+  { id: 2, name: 'React' },
+  { id: 3, name: 'Node.js' },
+  { id: 4, name: 'HTML' },
+  { id: 5, name: 'CSS' },
+  { id: 6, name: 'Bootstrap' },
+  { id: 7, name: 'Java' },
+  { id: 8, name: 'C++' },
+  { id: 9, name: 'Python' },
+  { id: 10, name: 'MySQL' }
+];
+
+
+
+
+// JSX element, header
+const info = (
+  <div className='info'>
+    <div>
+      <div>
+        <img className='dog' src={dogImg} alt='dog image' />
+      </div>
+        
+        <h2>{name}</h2>
+        <h3>{titteli}</h3>
+        <h2 className='skills-text'>Skills</h2>
+        <ul className='skills-list'>
+          {skills.map(skill => <li key={skill.id}>{skill.name}</li>)}
+        </ul>
+    </div>
+  </div>
+)
+
 // JSX element, app
 const app = (
   <div className='app'>
     {header}
     {main}
     {sub}
-    
+    {info}
+    {footer}
   </div>
 )
 
