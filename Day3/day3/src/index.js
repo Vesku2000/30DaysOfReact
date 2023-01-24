@@ -123,7 +123,19 @@ const skills = [
   { id: 7, name: 'Java' },
   { id: 8, name: 'C++' },
   { id: 9, name: 'Python' },
-  { id: 10, name: 'MySQL' }
+  { id: 10, name: 'MySQL' },
+  { id: 11, name: 'GraphQL' },
+  { id: 12, name: 'TypeScript' },
+  { id: 13, name: 'Next.js' },
+  { id: 14, name: 'Express.js' },
+  { id: 15, name: 'Jest' },
+  { id: 16, name: 'Mocha' },
+  { id: 17, name: 'Chai' },
+  { id: 18, name: 'Jasmine' },
+  { id: 19, name: 'Ember.js' },
+  { id: 20, name: 'Vue.js' },
+  { id: 21, name: 'Angular.js' },
+  { id: 22, name: 'D3.js' },
 ];
 
 
