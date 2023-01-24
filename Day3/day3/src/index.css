@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+
   }
 
   html,
@@ -76,4 +77,51 @@
   }
   img{
     width: 30%;
+  }
+
+  .sub{
+    text-align: center;
+  }
+
+  .sub-container{
+    width: 90%;
+    border-radius: 10px;
+    background-color: #61dbfb;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    
+  }
+  p1{
+    text-align: center;
+    font-weight: 600;
+  }
+
+  .form{
+    display: flex;
+    justify-content: center;
+  }
+
+  .inputField{
+    height: 2rem;
+    margin: 4px;
+    border-radius: 12px;
+    border: 1px solid grey;
+  }
+
+  .sub-button{
+    width: 10rem;
+    height: 3rem;
+    display: block;
+    margin: 0 auto;
+    border-radius: 12px;
+    color: white;
+    background-color: red;
+    border: 1px solid grey;
+    margin-top: 15px;
+    margin-bottom: 30px;
   }

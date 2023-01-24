@@ -93,13 +93,29 @@ const footer = (
     </div>
   </footer>
 )
+//sub task
+const sub = (
+  <div className='sub-container'>
+    <h1 className='sub'>Subscribe</h1>
+    <p1 className="sub">Sign up with your email address to receive news and updates</p1>
+    <div className='form'>
+
+      <input className='inputField' type="text" id="first-name" name="first-name" />
+      <input className='inputField' type="text" id="last-name" name="last-name" />
+      <input className='inputField' type="email" id="email" name="email" />
+
+    </div>
+    <button className='sub-button' type="submit">Subscribe</button>
+  </div>
+)
 
 // JSX element, app
 const app = (
   <div className='app'>
     {header}
     {main}
-    {footer}
+    {sub}
+    
   </div>
 )
 
